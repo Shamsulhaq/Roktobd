@@ -8,8 +8,125 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="আপনার রক্তের গ্রুপ সনাক্ত করুন"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hg" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/aP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#dcf6e1"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"
+            android:padding="30dp"
+            android:text="এ পজেটিভ"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/aN"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#8ae876"
+            android:text="এ নেগেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bP"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#efa4a4"
+            android:text="বি পজেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+        <Button
+            android:id="@+id/bN"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#d29e9e"
+            android:text="বি নেগেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/oP"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#dcefa4"
+            android:text="ও পজেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+        <Button
+            android:id="@+id/oN"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#d5ed8d"
+            android:text="ও নেগেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/abP"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#f0a2a3"
+            android:text="এবি পজেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+        <Button
+            android:id="@+id/abN"
+            android:layout_width="0dp"
+            android:padding="30dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:background="#f2ce76"
+            android:text="এবি নেগেটিভ"
+            android:layout_weight="1"
+            android:onClick="detectBloodGroup"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>

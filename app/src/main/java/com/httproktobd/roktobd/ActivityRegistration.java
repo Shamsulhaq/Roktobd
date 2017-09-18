@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class ActivityRegistration extends AppCompatActivity {
 
@@ -22,5 +23,9 @@ public class ActivityRegistration extends AppCompatActivity {
         ft.commit();
 
         // ok
+    }
+
+    public void detectBloodGroup(View view) {
+        Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
     }
 }
