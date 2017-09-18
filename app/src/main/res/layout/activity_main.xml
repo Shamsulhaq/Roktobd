@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="10dp"
     tools:context="com.httproktobd.roktobd.MainActivity">
 
@@ -28,13 +29,24 @@
             android:text="লগ ইন"
             android:textSize="20sp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#ee0b1e"
+            android:text="পাসওয়ার্ড ভুলে গেছেন?"/>
+
 
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:background="#5ed45d"
             android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="রক্ত বিডি তে একটি একাউন্ট খুলুন"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:onClick="linkToSignup"/>
 </LinearLayout>
