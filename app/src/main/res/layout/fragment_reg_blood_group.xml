@@ -30,13 +30,13 @@
             android:padding="25dp"
             android:text="এ পজেটিভ"
             android:layout_marginRight="2dp"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/aN"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#8ae876"
             android:text="এ নেগেটিভ"
@@ -61,13 +61,13 @@
             android:padding="25dp"
             android:layout_marginRight="2dp"
             android:text="বি পজেটিভ"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/bN"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#d29e9e"
             android:text="বি নেগেটিভ"
@@ -87,7 +87,7 @@
             android:id="@+id/oP"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#dcefa4"
             android:text="ও পজেটিভ"
@@ -99,7 +99,7 @@
             android:id="@+id/oN"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#d5ed8d"
             android:text="ও নেগেটিভ"
@@ -118,7 +118,7 @@
             android:id="@+id/abP"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#f0a2a3"
             android:text="এবি পজেটিভ"
@@ -130,7 +130,7 @@
             android:id="@+id/abN"
             android:layout_width="0dp"
             android:padding="25dp"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:background="#f2ce76"
             android:text="এবি নেগেটিভ"
