@@ -21,5 +21,6 @@ public class ActivityRegistration extends AppCompatActivity {
         ft.addToBackStack(null);
         ft.commit();
 
+        // ok
     }
 }
