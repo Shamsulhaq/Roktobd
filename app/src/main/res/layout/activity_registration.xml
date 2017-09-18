@@ -8,13 +8,6 @@
     android:gravity="center"
     tools:context="com.httproktobd.roktobd.ActivityRegistration">
 
-    <Button
-        android:id="@+id/f1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Fragment1"
-        android:layout_weight="1"
-        android:onClick="changeFragment"/>
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
