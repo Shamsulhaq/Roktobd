@@ -6,9 +6,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class ActivityRegistration extends AppCompatActivity {
+    private RadioButton maleRB,femaleRB;
+    private String male,female;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,13 @@ public class ActivityRegistration extends AppCompatActivity {
         ft.commit();
 
         // ok
+
+        // start find view
+            maleRB      = (RadioButton) findViewById(R.id.radioMale);
+            femaleRB    = (RadioButton) findViewById(R.id.radioFemale);
+        //end find view
+
+
     }
 
     public void detectBloodGroup(View view) {
@@ -34,4 +46,15 @@ public class ActivityRegistration extends AppCompatActivity {
         ft.addToBackStack(null);
         ft.commit();
     }
+
+    public void onClickGender(View view) {
+            male = maleRB.getText().toString();
+            female = femaleRB.getText().toString();
+            Toast.makeText(this, male, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, female, Toast.LENGTH_SHORT).show();
+    }
+
+
+
+
 }

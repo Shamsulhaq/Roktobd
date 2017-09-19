@@ -13,41 +13,59 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="আপনার সম্পূর্ণ নাম দিন"/>
+            android:hint="আপনার সম্পূর্ণ নাম দিন"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="আপনার মোবাইল নাম্বার দিন"/>
+            android:hint="আপনার মোবাইল নাম্বার দিন"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="জন্ম তারিখ সনাক্ত করুন"/>
+            android:hint="জন্ম তারিখ সনাক্ত করুন"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="আপনার ইমেইল দিন"/>
+            android:hint="আপনার ইমেইল দিন"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="একটি পাসওয়ার্ড দিন"/>
+            android:hint="একটি পাসওয়ার্ড দিন"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="পুনরায় পাসওয়ার্ড দিন"/>
+            android:hint="পুনরায় পাসওয়ার্ড দিন"/>
 
 
-        <Button
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="পুরুষ" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মহিলা" />
+        </RadioGroup>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:background="#5ed45d"
             android:textColor="#fff"
             android:textSize="18sp"
             android:text="রেজিস্ট্রেশন শেষ করুন"/>
-
-
 </LinearLayout>
