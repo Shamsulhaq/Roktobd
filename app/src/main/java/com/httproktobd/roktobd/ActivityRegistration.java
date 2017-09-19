@@ -27,5 +27,11 @@ public class ActivityRegistration extends AppCompatActivity {
 
     public void detectBloodGroup(View view) {
         Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
+        Fragment fragmentRegForm = new FragmentRegForm();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.fragmentContainer,fragmentRegForm);
+        ft.addToBackStack(null);
+        ft.commit();
     }
 }

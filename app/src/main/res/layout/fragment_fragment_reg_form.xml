@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#fff"
+    tools:context="com.httproktobd.roktobd.FragmentRegForm">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আপনার সম্পূর্ণ নাম দিন"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আপনার মোবাইল নাম্বার দিন"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="জন্ম তারিখ সনাক্ত করুন"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আপনার ইমেইল দিন"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="একটি পাসওয়ার্ড দিন"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পুনরায় পাসওয়ার্ড দিন"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5ed45d"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="রেজিস্ট্রেশন শেষ করুন"/>
+
+
+</LinearLayout>

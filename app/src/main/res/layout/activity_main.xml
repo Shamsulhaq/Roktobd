@@ -39,14 +39,15 @@
 
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:background="#5ed45d"
-            android:textColor="#fff"
+            android:onClick="linkToSignup"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="রক্ত বিডি তে একটি একাউন্ট খুলুন"
-            android:textSize="20sp"
-            android:onClick="linkToSignup"/>
+            android:textColor="#fff"
+            android:textSize="20sp" />
 </LinearLayout>

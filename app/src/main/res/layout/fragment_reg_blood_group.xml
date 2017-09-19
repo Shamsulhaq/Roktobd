@@ -43,7 +43,6 @@
             android:layout_marginLeft="2dp"
             android:layout_weight="1"
             android:onClick="detectBloodGroup"/>
-
     </LinearLayout>
 
     <LinearLayout
