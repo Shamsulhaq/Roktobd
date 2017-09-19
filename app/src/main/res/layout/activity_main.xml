@@ -38,6 +38,14 @@
             android:text="পাসওয়ার্ড ভুলে গেছেন?"/>
 
 
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:text="@string/app_name"/>
+
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
