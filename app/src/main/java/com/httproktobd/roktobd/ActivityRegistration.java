@@ -14,18 +14,20 @@ import android.widget.Toast;
 public class ActivityRegistration extends AppCompatActivity {
     private RadioButton maleRB,femaleRB;
     private String male,female;
+    public Fragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        Fragment bloodgroupFlagment = new FragmenBloodGroup();
+        fragment = new FragmenBloodGroup();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.fragmentContainer,bloodgroupFlagment);
+        ft.add(R.id.fragmentContainer,fragment);
         ft.addToBackStack(null);
         ft.commit();
+
 
         // ok
 
@@ -39,12 +41,8 @@ public class ActivityRegistration extends AppCompatActivity {
 
     public void detectBloodGroup(View view) {
         Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-        Fragment fragmentRegForm = new FragmentRegForm();
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.fragmentContainer,fragmentRegForm);
-        ft.addToBackStack(null);
-        ft.commit();
+        fragment = new FragmentAddressChoose();
+        configFragment(fragment);
     }
 
     public void onClickGender(View view) {
@@ -52,6 +50,25 @@ public class ActivityRegistration extends AppCompatActivity {
             female = femaleRB.getText().toString();
             Toast.makeText(this, male, Toast.LENGTH_SHORT).show();
             Toast.makeText(this, female, Toast.LENGTH_SHORT).show();
+    }
+    public void pickAddress (View view){
+        fragment = new FragmentRegForm();
+        configFragment(fragment);
+
+
+    }
+    public void configFragment(Fragment fragment){
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.fragmentContainer,fragment);
+        ft.addToBackStack(null);
+        ft.commit();
+    }
+    public void verification (View view){
+        fragment = new FragmentVerification();
+        configFragment(fragment);
+
+
     }
 
 

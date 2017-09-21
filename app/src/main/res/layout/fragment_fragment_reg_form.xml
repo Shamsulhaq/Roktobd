@@ -67,5 +67,6 @@
             android:background="#5ed45d"
             android:textColor="#fff"
             android:textSize="18sp"
-            android:text="রেজিস্ট্রেশন শেষ করুন"/>
+        android:onClick="verification"
+            android:text="পরবর্তি ধাপে প্রবেশ করুন"/>
 </LinearLayout>
